@@ -1,0 +1,194 @@
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+    overflow-x: hidden;
+}
+
+p{
+
+}
+
+p.bigfirst::first-letter{
+    font-size: 300%;
+}
+
+.root {
+    min-height:100%;
+    position:relative;
+}
+.body {
+    padding:10px;
+    padding-bottom:100px;   /* Height of the footer */
+
+}
+.footer {
+    position:relative;
+    bottom:0;
+    width:100%;
+    height:100px;   /* Height of the footer */
+    background:black;
+    overflow-x: hidden;
+}
+
+.card{
+    padding: 10px;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+
+.page-header{
+    font-family: 'Roboto', sans-serif;
+    font-size:35px;
+    margin-bottom: 50px;
+}
+#header a{
+    text-decoration: none;
+
+
+}
+#header a:hover {
+    color: black;
+    text-decoration: none;
+    text-shadow: 0.5px 0.5px 1px #aaa;
+}
+#sub_header
+{
+    font-family: 'Muli', sans-serif;
+}
+
+.experience{
+    background-color: lightcyan;
+    margin-bottom: 20px;
+}
+.skills
+{
+    background-color: white;
+    margin-left: 32%;
+    font-size: 444px;
+    font-family: "Arial Black";
+
+}
+.projects{
+    background-color: aliceblue;
+    margin-bottom: 20px;
+}
+
+#footer a{
+    color: white;
+}
+
+#footer a:hover{
+    color: #bbb;
+}
+
+#footer{
+    padding-top: 30px;
+}
+
+#about_me {
+    color: #ccc;
+    background-color: black;
+    padding: 40px;
+    margin-bottom: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 15px;
+}
+
+
+.card-subtitle{
+    font-size: 120%;
+    color: black;
+}
+
+.card-title{
+    color: black;
+
+}
+
+
+.card-background{
+    padding-top: 40px;
+    margin: 0px;
+
+}
+
+.skills-graph{
+    margin-top: -20px;
+    background-color: #fff;
+    margin-bottom: -100px;
+
+}
+
+.skills-graph2{
+    margin-top: -550px;
+    margin-left: 600px;
+    background-color: #fff;
+    margin-bottom: -100px;
+}
+
+.heading{
+    font-size: 40px;
+    cursor: pointer;
+    cursor: hand;
+
+}
+
+.vSpace50{
+    margin-bottom: 50px;
+    margin-top: 150px;
+}
+.vSpace30{
+    margin-bottom: 30px;
+
+}
+
+.dp{
+    height:300px;
+    width:250px;
+}
+
+.footerText{
+    font-size: 18px;
+    color: white;
+
+}
+
+#github{
+    font-size:25px;
+    color: gray;
+    -webkit-border-radius: 20px;
+}
+#github a{
+    color: gray;
+}
+#github a:hover{
+    color: black;
+}
+
+.contents{
+    margin-bottom: 20px;
+}
+
+svg{
+    font-size: 40px;
+}
+.negativevspace{
+    margin-bottom: -100px;
+}
