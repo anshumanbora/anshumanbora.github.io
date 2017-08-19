@@ -235,7 +235,7 @@ class Section extends Component{
 
         return(
             <div>
-                <div className="card-background">
+                <div className="section card-background">
                     <div style={linkStyleSkills}
                          onMouseEnter={this.toggleHoverSkills}
                          onMouseLeave={this.toggleHoverSkills}

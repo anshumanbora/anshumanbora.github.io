@@ -5,11 +5,6 @@ body {
     height:100%;
     overflow-x: hidden;
 }
-
-p{
-
-}
-
 p.bigfirst::first-letter{
     font-size: 300%;
 }
@@ -54,14 +49,22 @@ a:active{
 
 .page-header{
     font-family: 'Roboto', sans-serif;
-    font-size:35px;
+    font-size:25px;
     margin-bottom: 50px;
+    padding-top: 45px;
+    padding-bottom: 0px;
+    margin-top: -30px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    background-color: white;
+
+
 }
 #header a{
     text-decoration: none;
-
-
 }
+
 #header a:hover {
     color: black;
     text-decoration: none;
@@ -79,8 +82,8 @@ a:active{
 .skills
 {
     background-color: white;
-    margin-left: 32%;
-    font-size: 444px;
+    /*margin-left: 32%;
+    */
     font-family: "Arial Black";
 
 }
@@ -94,7 +97,7 @@ a:active{
 }
 
 #footer a:hover{
-    color: #bbb;
+    color: lightseagreen;
 }
 
 #footer{
@@ -102,13 +105,19 @@ a:active{
 }
 
 #about_me {
+    margin-top: 10px;
     color: #ccc;
     background-color: black;
-    padding: 40px;
-    margin-bottom: 50px;
     text-align: justify;
     text-justify: inter-word;
     font-size: 15px;
+    padding: 20px ;
+    padding-bottom: 50px;
+
+}
+
+.dp{
+
 }
 
 
@@ -147,7 +156,7 @@ a:active{
     font-size: 40px;
     cursor: pointer;
     cursor: hand;
-
+    margin-bottom: 20px;
 }
 
 .vSpace50{
@@ -159,10 +168,6 @@ a:active{
 
 }
 
-.dp{
-    height:300px;
-    width:250px;
-}
 
 .footerText{
     font-size: 18px;
@@ -170,16 +175,19 @@ a:active{
 
 }
 
+
 #github{
     font-size:25px;
     color: gray;
     -webkit-border-radius: 20px;
 }
+
 #github a{
     color: gray;
 }
+
 #github a:hover{
-    color: black;
+    color: lightseagreen;
 }
 
 .contents{
@@ -189,6 +197,24 @@ a:active{
 svg{
     font-size: 40px;
 }
+
 .negativevspace{
     margin-bottom: -100px;
+}
+
+
+.black{
+    background-color: black;
+    height: 300px;
+
+}
+
+.red{
+    background-color: red;
+    height: 290px;
+}
+
+.section{
+    position: relative;
+    margin-top: 200px;
 }

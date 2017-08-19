@@ -14,7 +14,7 @@ class App extends Component{
 
 
             <div>
-                <div className="header"><Header/></div>
+                <div className="header opaque"><Header/></div>
                 <div className="body">
                     <Section/>
                     <AboutMe/>

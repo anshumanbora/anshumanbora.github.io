@@ -5,10 +5,10 @@ import { VictoryAxis,VictoryPie,VictoryPolarAxis, VictoryBar,VictoryGroup,Victor
 const SkillChart = React.createClass({
     render () {
         return (
-            <div className="skills negativevspace">
-                <svg width={500} height={450}>
+            <div className="skills ">
+                <svg width="100%" height={450} viewBox="0 0 500 450" preserveAspectRatio="xMidYMid meet">
                     <VictoryChart polar
-                                  width={450}
+                                  width={500}
                                   height={450}
                                   theme={VictoryTheme.material}
                     >
