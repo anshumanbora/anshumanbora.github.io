@@ -28,28 +28,29 @@ class AboutMe extends Component{
                 <div className="space-div"></div>
                     {/*<Hobbies/>*/}
                 <div className="row">
-                    <div className="col-md-3"></div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 col-xs-0"></div>
+                    <div className="col-md-3 col-xs-12">
                         <div id="intro-content">
                             <div className="mediumText">
 
-                                <div className="ASU">Master of Computer Science
+                                <div className="ASU text-center">Master of Computer Science
                                 <br/> Arizona State University, USA
                                 <br/>August 2016 - May 2018
                                 </div>
-                                <div className="Nirma">
+                                <div className="Nirma text-center">
                                 <br/>B.Tech in Computer Engineering
                                 <br/> Nirma University, India
                                 <br/>July 2012 - May 2016
                                 </div>
 
                             </div>
-                            <div className="largeText">
+                            <div className="largeText text-center ">
                                 <br/>
-                                <br/>
+
 
                                 I like creating visually appealing, minimalist projects on the Web.
                                 Passionate about Blockchain, Human Computer Interaction and Adaptive Web Applications!
+                                <div className="vSpace30"></div>
                             </div>
 
                         </div>
@@ -58,7 +59,7 @@ class AboutMe extends Component{
                         <img height="380" width="330" className="img-responsive center-block" src={require('../images/2.jpg')} />
 
                     </div>
-                    <div className="col-md-3"></div>
+                    <div className="col-md-3 col-xs-0"></div>
 
                 </div>
 

@@ -47,12 +47,12 @@ class Skills extends Component{
             <div>
                 <br/><h4><div className="text-center">Overall Skills distribution</div></h4>
                 <div className="row fullstack">
-                    <div className="col-md-2"></div>
+                    <div className="col-md-2 col-xs-1"></div>
 
-                    <div className="col-md-5 frontend text-center"><h4>FRONT END</h4></div>
-                    <div className="col-md-3 backend text-center"><h4>BACK END</h4></div>
+                    <div className="col-md-5 col-xs-6 frontend text-center"><h4>FRONT END</h4></div>
+                    <div className="col-md-3 col-xs-4 backend text-center"><h4>BACK END</h4></div>
 
-                    <div className="col-md-2"></div>
+                    <div className="col-md-2 col-xs-1"></div>
 
                 </div>
 
