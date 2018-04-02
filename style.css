@@ -23,7 +23,8 @@ p.bigfirst::first-letter{
     bottom:0;
     width:100%;
     height:100px;   /* Height of the footer */
-    background:black;
+    background:darkslategray;
+    color:white;
     overflow-x: hidden;
 }
 
@@ -48,9 +49,9 @@ a:active{
 }
 
 .page-header{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size:25px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     padding-top: 45px;
     padding-bottom: 0px;
     margin-top: -30px;
@@ -73,6 +74,7 @@ a:active{
 #sub_header
 {
     font-family: 'Muli', sans-serif;
+    font-size: medium;
 }
 
 .experience{
@@ -104,22 +106,6 @@ a:active{
     padding-top: 30px;
 }
 
-#about_me {
-    margin-top: 10px;
-    color: #ccc;
-    background-color: black;
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 15px;
-    padding: 20px ;
-    padding-bottom: 50px;
-
-}
-
-.dp{
-
-}
-
 
 .card-subtitle{
     font-size: 120%;
@@ -137,12 +123,29 @@ a:active{
     margin: 0px;
 
 }
+@keyframes SkillsHeader {
+    0% {color: black}
+    50%{color: #2AC5EA}
+    100% {color: black}
+}
 
-.skills-graph{
-    margin-top: -20px;
-    background-color: #fff;
-    margin-bottom: -100px;
+#blockSkillsHeader{
+    margin: 20px;
+    background-color: white;
+    color: black;
+    font-size: medium;
+    animation: SkillsHeader;
+    animation-duration: 2s;
+    padding: 10px;
+    border-radius: 4px;
 
+}
+
+.blockSkillsElements{
+
+    color: orangered;
+    margin-bottom: 20px;
+    margin-top: -10px;
 }
 
 .skills-graph2{
@@ -216,5 +219,81 @@ svg{
 
 .section{
     position: relative;
-    margin-top: 200px;
+    margin-top: 50px;
+}
+
+.icon-space{
+    margin-right: 50px;
+}
+.space-div{
+    margin-top: 100px;
+}
+.blue-background{
+    background-color: paleturquoise;
+    padding: 20px;
+    padding-right: 10px;
+}
+
+#intro-content{
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 0%;
+    font-weight: bold;
+    font-family: 'Oxygen', sans-serif;
+    color: black;
+
+}
+
+.style{
+    background-color:black ;
+}
+.image{
+
+}
+
+iframe{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.fullstack{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.frontend{
+    background-color: purple;
+    color: white;
+    float: left;
+
+}
+.backend{
+    background-color: navy;
+    color: white;
+    float: left;
+}
+.interestText{
+    font-size: larger;
+}
+
+.spotify{
+    margin-top: 40px;
+}
+.largeText{
+    color: #6a6a6a;
+    font-size: 20px;
+}
+.mediumText{
+    font-size: 16px;
+
+}
+.bold{
+    font-weight: bold;
+}
+.ASU{
+    color: maroon;
+}
+
+.Nirma{
+    color: maroon;
 }

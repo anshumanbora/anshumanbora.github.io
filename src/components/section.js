@@ -2,29 +2,40 @@
  * Created by anshuamanbora on 7/9/2017.
  */
 import React,{Component} from 'react';
-import SkillChart from './languages';
+import Skills from './Skills';
+import Spotify from "./Spotify";
 
 var data = {
     content: {
         experience: [
             {
-                heading: "Blockchain Lab, Arizona State University",
-                time:"June 2017 - Current",
-                about : "Currently leading the front-end development team of the Blockchain Lab at Arizona State University. I coordinate with the backend team to come up with efficient strategies and also delegate tasks within the team. The development is mainly concentrated around React JS, Node JS and leverages the open source Blockchain technologies of Hyperledger environment"
+                heading: "Lead Front End Developer",
+                time:"Blockchain Lab, Arizona State University, June 2017 - September 2017",
+                about : "Built a prototype Blockchain based supply-chain platform, with IBM’s Hyperledger Fabric and React-Redux. Managed a four-member front-end team and came up with UI flows and layouts in team sessions. Attended client meetings and coordinated with the back-end team\n"
             },
 
             {
-                heading: "Infosys Ltd.",
-                time:"January 2016 - May 2016",
-                about : "Implemented a real time server monitoring application, which was deployed successfully on actual servers. This pilot project provided a robust foundation for its later versions. I developed the central monitoring web application using JSF, HTML5, CSS3 and JavaScript."
+                heading: "Engineering Intern",
+                time:"Infosys Ltd.,January 2016 - May 2016",
+                about : " Developed a server monitoring application which was an improvement from the existing implementation. Built the application using JavaScript and Java Server Faces, which is based on the object-relational model(ORM)."
             },
             {
-                heading: "Venture Xplore",
-                time:"May 2014 - July 2014",
-                about : "Implemented the front-end of Venture- Xplores’ website. Instrumental in brainstorming the UI/UX of the website.Intensively involved in the product development phase as an auxiliary responsibility."
+                heading: "Web Developer Intern",
+                time:"Venture Xplore, May 2014 - July 2014",
+                about : "Designed and developed the interfaces of Venture Xplore’s website, built on the LAMP stack. Brainstormed with the development team for content generation and employed my graphic design skills for designing the website."
             }
         ],
         projects: [
+            {
+                heading: "Sunshine Acres, Winners of PayPal Opportunity Hack 2017",
+                tags:"Key : Hackathon, React Native, Python",
+                about: " Developed a web application and a React native mobile application which helped keep track of medications administered to children at foster homes across Arizona. Created a data pipeline to read records of children from the database and generate reports for Department of Child Safety."
+            },
+            {
+                heading: "StackOverflow Activity Tracker",
+                tags:"Key : Browser Extension, JavaScript, Web",
+                about: "Built a browser extension using JavaScript which tracked user activity on a Q/A site by recording user clicks, copy action, tags etc."
+            },
             {
                 heading: "Geospatial Data Analysis using Hadoop and Apache Spark",
                 tags:"Key : Hadoop, Spark, Distributed Databases",
@@ -34,6 +45,12 @@ var data = {
                 heading: "Video Similarity Detection Tool",
                 tags:"Key : Feature reduction techniques, Indexing, Pagerank ",
                 about: "Finding similarity between different videos based on color, SIFT features and motion vectors. Algorithms like Pagerank, ASCOS and were used to find significant frames in a video database, and index them using LSH and then query with indexing. This application reduces dimensionality of the vector space using techniques like PCA and K-means clustering."
+            }
+            ,
+            {
+                heading: "Java Wiki Recommender",
+                tags:"Key : SOLR, Indexing, Web",
+                about: "Designed a content-based recommendation web application using Python and JavaScript."
             }
             ,
             {
@@ -49,27 +66,8 @@ var data = {
                 about: "A Windows desktop based application built on Python. This project was a realistic 2-dimensional rendition of the map of Nirma University, India. This portable application had scaled down versions of buildings, streets and other physical structures of the university. A user could effortlessly roam and explore the university from any desktop device. The standout feature of this application is that it enabled users to navigate from one location to another with the click of the mouse. Special permissions were taken from the university authorities to reproduce the buildings in the original scale."
             }
 
-        ],
-        skills: [
-            {
-                heading: "Web Develpoment",
-                about : "React, HTML5, CSS3, JavaScript"
-
-            },
-            {
-                heading: "Frameworks & Technologies",
-                about : "Hadoop, Apache Spark, Matlab, Unity, Amazon Web Services, Docker, Hyperledger Fabric"
-            },
-            {
-                heading: "Languages",
-                about : "Python, Java, C++"
-            },
-            {
-                heading: "Database",
-                about : "Oracle DB, PostgreSQL, Mongo DB"
-            }
-
         ]
+
     }
 
 };
@@ -172,8 +170,11 @@ class Section extends Component{
     constructor(){
         super();
         this.state={projectVisible: false,
-            experienceVisible: false,
-            skillsVisible: false}
+                    experienceVisible: false,
+                    interestVisible:false,
+                    skillsVisible: false
+
+                    }
 
     }
     onClickExp() {
@@ -188,6 +189,11 @@ class Section extends Component{
         this.setState({skillsVisible: !this.state.skillsVisible});
 
     }
+    onClickInterest() {
+        this.setState({interestVisible: !this.state.interestVisible});
+
+    }
+
 
     /*
         getInitialStateExp=()=>{
@@ -209,10 +215,15 @@ class Section extends Component{
         this.setState({hoverSkills:!this.state.hoverSkills})
     }
 
+    toggleHoverInterest=()=>{
+        this.setState({hoverInterest:!this.state.hoverInterest})
+    }
+
     render(){
         var linkStyleExp;
         var linkStyleProject;
         var linkStyleSkills;
+        var linkStyleInterest;
 
         if (this.state.hoverExp) {
             linkStyleExp = {color: '#FBB03B'}
@@ -233,6 +244,12 @@ class Section extends Component{
             linkStyleSkills = {color: 'gray'}
         }
 
+        if (this.state.hoverInterest) {
+            linkStyleInterest = {color: 'purple'}
+        } else {
+            linkStyleInterest = {color: 'gray'}
+        }
+
         return(
             <div>
                 <div className="section card-background">
@@ -244,10 +261,7 @@ class Section extends Component{
                     </div>
                     {
                         this.state.skillsVisible
-                            ?<div >
-
-                                <SkillChart/>
-                            </div>
+                            ?<Skills/>
                             : null
                     }
                 </div>
@@ -278,6 +292,23 @@ class Section extends Component{
                             : null
                     }
                 </div>
+
+                <div className="card-background">
+                    <div style={linkStyleInterest}
+                         onMouseEnter={this.toggleHoverInterest}
+                         onMouseLeave={this.toggleHoverInterest}
+                         onClick={()=>this.onClickInterest()}
+                         className="heading text-center vSpace30"> INTERESTS
+
+                    </div>
+                    {
+                        this.state.interestVisible
+                            ?<Spotify/>
+                            : null
+                    }
+                </div>
+
+
 
                 <div className="vSpace50"></div>
 

@@ -10,17 +10,36 @@ class Header extends Component{
         return(
             <div id="header" className="page-header header text-center">
                 <div className="row"></div>
-                <div className="col-md-2"></div>
-                <div className="col-md-8"> ANSHUMAN BORA</div>
-                <div className="col-md-2">
-                    <div id="github">
-                        <a  title="GitHub"  href="https://www.github.com/anshumanbora">
-                            <i className="fa fa-github fa-2x" aria-hidden="true"></i>
-                        </a>
-                    </div>
+                <div className="col-md-4 text-left">ANSHUMAN BORA
+                    <h4 id="sub_header">
+                        Full Stack Developer
+                    </h4>
                 </div>
-                <h4 id="sub_header">
-                    Graduate student at <a href="https://engineering.asu.edu/">Arizona State University</a></h4>
+                <div className="col-md-4"> </div>
+                <div className="col-md-4">
+                    <div >
+                        <span className="icon-space"><a  title="Check out my GitHub fam!"  href="https://www.github.com/anshumanbora">
+                            <i className="fa fa-github fa-1x" aria-hidden="true"></i>
+                            </a>
+                        </span>
+                        <span className="icon-space"><a title="Mail me"  href="mailto:anshumanbora04@gmail.com">
+                            <i className="fa fa-envelope fa-1x"></i>
+                            </a>
+                        </span>
+                        <span className="icon-space"><a title="Connect with me on LinkedIn" href="https://www.linkedin.com/in/anshuman-bora/">
+                            <i className="fa fa-linkedin fa-1x" aria-hidden="true"></i>
+                            </a>
+                        </span>
+                        <span className="icon-space"><a title="Hit me up on Facebook" href="https://www.facebook.com/anshumanbora04">
+                            <i className="fa fa-facebook fa-1x"></i>
+                            </a>
+                        </span>
+
+
+                    </div>
+                 </div>
+
+
             </div>
 
 

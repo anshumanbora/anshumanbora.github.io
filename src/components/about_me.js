@@ -2,6 +2,7 @@
  * Created by anshuamanbora on 7/12/2017.
  */
 import React,{Component} from 'react';
+import Spotify from './Spotify';
 
 class AboutMe extends Component{
 
@@ -23,36 +24,44 @@ class AboutMe extends Component{
         return(
 
             <div>
-
-                    <div className="">
-                        <img height="280" width="390" className="img-responsive center-block" src={require('../images/portfolio.png')} />
-                    </div>
-
-                <div className="container">
+                {/*This div is here for space. Donot remove*/}
+                <div className="space-div"></div>
+                    {/*<Hobbies/>*/}
                 <div className="row">
-                    <div className="col-sm-4 col-md-4"></div>
-                    <div id="about_me" className="col-xs-12 col-sm-4 col-md-4">
-                        <p className="bigfirst"> Hello!
-                        </p>
+                    <div className="col-md-3"></div>
+                    <div className="col-md-3">
+                        <div id="intro-content">
+                            <div className="mediumText">
 
-                        <b/>
-                        I am training myself to be a full-stack developer.
-                        I like creating visually appealing projects.
-                        Most of my experiences so far has been
-                        in the domain of front-end development
-                        and I am currently expanding my field of interest
-                        to full-stack development. I am pursuing my Masters
-                        in Computer Science from Arizona State University
-                        and will graduate by May 2018.
+                                <div className="ASU">Master of Computer Science
+                                <br/> Arizona State University, USA
+                                <br/>August 2016 - May 2018
+                                </div>
+                                <div className="Nirma">
+                                <br/>B.Tech in Computer Engineering
+                                <br/> Nirma University, India
+                                <br/>July 2012 - May 2016
+                                </div>
 
+                            </div>
+                            <div className="largeText">
+                                <br/>
+                                <br/>
 
+                                I like creating visually appealing, minimalist projects on the Web.
+                                Passionate about Blockchain, Human Computer Interaction and Adaptive Web Applications!
+                            </div>
 
+                        </div>
+                    </div>
+                    <div className="col-md-3 image">
+                        <img height="380" width="330" className="img-responsive center-block" src={require('../images/2.jpg')} />
 
                     </div>
-                    <div className="col-sm-4 col-md-4"></div>
+                    <div className="col-md-3"></div>
 
                 </div>
-            </div>
+
 
             </div>
 
