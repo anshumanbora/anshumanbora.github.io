@@ -19,7 +19,7 @@ class Spotify extends Component{
                 </div>
                 <div className="col-md-1"></div>
                 <div className="col-md-5 spotify">
-                    <iframe src="https://open.spotify.com/embed?uri=spotify:user:223diqhziureh7re5v3mfwifi:playlist:3V3cWcWDAsPa9Ybl6gVtsC&theme=white" width="270" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed?uri=spotify:user:223diqhziureh7re5v3mfwifi:playlist:3V3cWcWDAsPa9Ybl6gVtsC&theme=white" width="270" height="350" frameBorder="0" allowTransparency="true"></iframe>
                 </div>
             </div>
         );

@@ -11,7 +11,7 @@ class Footer extends Component{
                 <div className="text-center">
                    Hope you had a great time!
                     <br/>
-                    [ Developed with React JS ]
+
                 </div>
             </div>
         );
