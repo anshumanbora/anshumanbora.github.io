@@ -10,14 +10,15 @@ class Header extends Component{
         return(
             <div id="header" className="page-header header text-center">
                 <div className="row"></div>
-                <div className="col-md-4 text-left">ANSHUMAN BORA
+                <div className="col-md-4 text-left">Anshuman<span className="surname">Bora</span>
                     <h4 id="sub_header">
                         Full Stack Developer
                     </h4>
                 </div>
                 <div className="col-md-4"> </div>
                 <div className="col-md-4">
-                    <div >
+                    <div>
+                        <span className="padding-left-50px"></span>
                         <span className="icon-space"><a  title="Check out my GitHub fam!"  href="https://www.github.com/anshumanbora">
                             <i className="fa fa-github fa-1x" aria-hidden="true"></i>
                             </a>

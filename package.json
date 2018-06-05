@@ -19,6 +19,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-interactive": "^0.6.5",
+    "react-reveal": "^1.2.2",
     "react-router-dom": "^4.1.1",
     "victory": "^0.25.6"
   },

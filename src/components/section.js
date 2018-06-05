@@ -4,10 +4,16 @@
 import React,{Component} from 'react';
 import Skills from './Skills';
 import Spotify from "./Spotify";
+import Fade from 'react-reveal/Fade';
 
 var data = {
     content: {
         experience: [
+            {
+                heading: "Volunteer Web Developer",
+                time:"Sunshine Acres, October 2017 - Current",
+                about : "Developed a web based React application to keep track of medications administered to more than 2000 foster children.\n"
+            },
             {
                 heading: "Lead Front End Developer",
                 time:"Blockchain Lab, Arizona State University, June 2017 - September 2017",
@@ -29,41 +35,48 @@ var data = {
             {
                 heading: "Sunshine Acres, Winners of PayPal Opportunity Hack 2017",
                 tags:"Key : Hackathon, React Native, Python",
-                about: " Developed a web application and a React native mobile application which helped keep track of medications administered to children at foster homes across Arizona. Created a data pipeline to read records of children from the database and generate reports for Department of Child Safety."
+                about: "Developed a system to record medicines given to kids at a Foster home",
+                link:"https://devpost.com/software/team8-sunshineacres"
             },
             {
                 heading: "StackOverflow Activity Tracker",
                 tags:"Key : Browser Extension, JavaScript, Web",
-                about: "Built a browser extension using JavaScript which tracked user activity on a Q/A site by recording user clicks, copy action, tags etc."
+                about: "Browser extension to keep track of user activity.",
+                link:"https://github.com/anshumanbora/Tracker-Extension"
             },
             {
                 heading: "Geospatial Data Analysis using Hadoop and Apache Spark",
                 tags:"Key : Hadoop, Spark, Distributed Databases",
-                about: "Successfully setting up a distributed computing environment with Hadoop, followed by studying the performance of the network by running various tasks on the network. Analysis of a spatial-temporal data-set to find important spots within the map using Apache Spark and visualize it."
+                about: "Working with a huge data set to find interesting hotspots",
+                link:"https://github.com/vrajasu/geo-spatial-analysis"
             },
             {
                 heading: "Video Similarity Detection Tool",
                 tags:"Key : Feature reduction techniques, Indexing, Pagerank ",
-                about: "Finding similarity between different videos based on color, SIFT features and motion vectors. Algorithms like Pagerank, ASCOS and were used to find significant frames in a video database, and index them using LSH and then query with indexing. This application reduces dimensionality of the vector space using techniques like PCA and K-means clustering."
+                about: "Give me two videos and I'll tell you if they are similar",
+                link:"https://github.com/super9user/mwd_phase3"
             }
             ,
             {
                 heading: "Java Wiki Recommender",
                 tags:"Key : SOLR, Indexing, Web",
-                about: "Designed a content-based recommendation web application using Python and JavaScript."
+                about: "Will tell you what to study. Yes it is intelligent.",
+                link:"https://github.com/anshumanbora/Content-Based-Recommender"
             }
             ,
             {
                 heading: "Customer Communication Application",
                 tags:"Key : Java, Database, Hackathon",
-                about: "This project automated the communication process with customers for a non-profit organization and integrated a standalone database with a website. The erstwhile manually handled communication system was made fully automated by providing a simple user interface and a robust back-end. Designed and implemented the back-end of the this Java desktop application."
+                about: "Made life simpler by making communication easier",
+                link:"https://github.com/Opportunity-Hack-2016-AZ/Team14"
             }
 
             ,
             {
                 heading: "Nirma Atlas",
                 tags:"Key : Python, Graphics, Map",
-                about: "A Windows desktop based application built on Python. This project was a realistic 2-dimensional rendition of the map of Nirma University, India. This portable application had scaled down versions of buildings, streets and other physical structures of the university. A user could effortlessly roam and explore the university from any desktop device. The standout feature of this application is that it enabled users to navigate from one location to another with the click of the mouse. Special permissions were taken from the university authorities to reproduce the buildings in the original scale."
+                about: "A map to unlock mysteries",
+                link:"https://github.com/anshumanbora/Nirma-Atlas"
             }
 
         ]
@@ -87,21 +100,25 @@ class Projects extends Component {
 
 
         var projects = data.content.projects.map(function(details){
-            return (<div>
-                    <div className="row ">
-                        <div className="col-xs-2 "></div>
-                        <div className="col-xs-8 center-block" align="center">
-                            <div className="card  projects">
-                                <div className="card-block">
-                                    <h4 className="card-title"><strong>{details.heading}</strong></h4>
-                                    <h6 className="card-subtitle mb-2 text-muted">{details.tags}</h6>
-                                    <p className="card-text">{details.about}</p>
+            return (
+                <div>
+                    <Fade bottom>
+                        <div className="row">
+                            <div className="col-xs-3 "></div>
+                            <div className="col-xs-6 center-block" align="center">
+                                <div className="card  projects">
+                                    <div className="card-block">
+                                        <h4 className="card-title"><strong>{details.heading}</strong></h4>
+                                        <h6 className="card-subtitle mb-2 text-muted">{details.tags}</h6>
+                                        <p className="card-text">{details.about}</p>
+                                        <a className="project-link" href={details.link}>Learn More</a>
 
+                                    </div>
                                 </div>
                             </div>
+                            <div className="col-xs-3"></div>
                         </div>
-                        <div className="col-xs-2"></div>
-                    </div>
+                    </Fade>
                 </div>
             );
         });
@@ -132,20 +149,22 @@ class Experience extends Component {
         var experience = data.content.experience.map(function(details){
             return (
                 <div>
-                    <div className="row">
-                        <div className="col-xs-2"></div>
-                        <div className="col-xs-8 center-block" align="center">
-                            <div className="card experience">
-                                <div className="card-block">
-                                    <h4 className="card-title"><strong>{details.heading}</strong></h4>
-                                    <h6 className="card-subtitle mb-2 text-muted">{details.time}</h6>
-                                    <p className="card-text">{details.about}</p>
+                    <Fade bottom>
+                        <div className="row">
+                            <div className="col-xs-3"></div>
+                            <div className="col-xs-6 center-block" align="center">
+                                <div className="card experience">
+                                    <div className="card-block">
+                                        <h4 className="card-title"><strong>{details.heading}</strong></h4>
+                                        <h6 className="card-subtitle mb-2 text-muted">{details.time}</h6>
+                                        <p className="card-text">{details.about}</p>
 
+                                    </div>
                                 </div>
                             </div>
+                            <div className="col-xs-3"></div>
                         </div>
-                        <div className="col-xs-2"></div>
-                    </div>
+                    </Fade>
                 </div>
 
 
@@ -266,6 +285,7 @@ class Section extends Component{
                     }
                 </div>
                 <div className="card-background">
+
                     <div style={linkStyleExp}
                          onMouseEnter={this.toggleHoverExp}
                          onMouseLeave={this.toggleHoverExp}
@@ -277,6 +297,7 @@ class Section extends Component{
                             ? <Experience />
                             : null
                     }
+
                 </div>
 
                 <div className="card-background">
@@ -293,7 +314,7 @@ class Section extends Component{
                     }
                 </div>
 
-                <div className="card-background">
+                <div className="card-background ">
                     <div style={linkStyleInterest}
                          onMouseEnter={this.toggleHoverInterest}
                          onMouseLeave={this.toggleHoverInterest}

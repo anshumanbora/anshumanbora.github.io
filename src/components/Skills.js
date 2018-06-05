@@ -1,6 +1,6 @@
 
 import React, {Component} from 'react';
-
+import Fade from 'react-reveal/Fade';
 class Skills extends Component{
 
 
@@ -9,18 +9,18 @@ class Skills extends Component{
             {
                 key:1,
                 heading: "Web Develpoment",
-                about : "HTML5,  CSS3,  Node,  React,  Redux"
+                about : "HTML5,  CSS3,  Node,  React, Flask, MVC, Flux"
 
             },
             {
                 key:2,
                 heading: "Frameworks & Technologies",
-                about : "Hadoop,  Apache,  Spark,  Matlab,  Unity,  Hyperledger Fabric"
+                about : "Hadoop,  Apache,  Spark,  Unity,  Hyperledger Fabric"
             },
             {
                 key:3,
                 heading: "Languages",
-                about : "Python,  JavaScript,  Java,  C++"
+                about : "Python,  JavaScript,  Java,  C++, MATLAB"
             },
             {
                 key:4,
@@ -45,18 +45,28 @@ class Skills extends Component{
 
         return(
             <div>
-                <br/><h4><div className="text-center">Overall Skills distribution</div></h4>
+                <Fade bottom>
+                <br/><h4><div className="text-center">Skills Distribution Ratio</div></h4>
                 <div className="row fullstack">
                     <div className="col-md-2 col-xs-1"></div>
 
-                    <div className="col-md-5 col-xs-6 frontend text-center"><h4>FRONT END</h4></div>
-                    <div className="col-md-3 col-xs-4 backend text-center"><h4>BACK END</h4></div>
+                    <div className="col-md-5 col-xs-6 frontend text-center">
+                        <h4>FRONT END</h4>
+                        <div className="tool-tip text-left fadein8">Yes, I lean more towards Front end development</div>
+
+
+                    </div>
+                    <div className="col-md-3 col-xs-4 backend text-center">
+                        <h4>BACK END</h4>
+                        <div className="tool-tip text-right fadein8">But, I can write robust APIs too!</div>
+                    </div>
 
                     <div className="col-md-2 col-xs-1"></div>
 
                 </div>
 
                 {skills}
+                </Fade>
             </div>
         )
     }

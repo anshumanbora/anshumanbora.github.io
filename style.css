@@ -4,7 +4,10 @@ body {
     padding:0;
     height:100%;
     overflow-x: hidden;
+    
 }
+
+
 p.bigfirst::first-letter{
     font-size: 300%;
 }
@@ -49,8 +52,8 @@ a:active{
 }
 
 .page-header{
-    font-family: 'Oswald', sans-serif;
-    font-size:25px;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size:29px;
     margin-bottom: 0px;
     padding-top: 45px;
     padding-bottom: 0px;
@@ -74,7 +77,7 @@ a:active{
 #sub_header
 {
     font-family: 'Muli', sans-serif;
-    font-size: medium;
+    font-size: 17px;
 }
 
 .experience{
@@ -122,9 +125,10 @@ a:active{
     padding-top: 40px;
     margin: 0px;
 
+
 }
 @keyframes SkillsHeader {
-    0% {color: black}
+    0% {color: white}
     50%{color: #2AC5EA}
     100% {color: black}
 }
@@ -135,7 +139,7 @@ a:active{
     color: black;
     font-size: medium;
     animation: SkillsHeader;
-    animation-duration: 2s;
+    animation-duration: 4s;
     padding: 10px;
     border-radius: 4px;
 
@@ -236,7 +240,7 @@ svg{
 
 #intro-content{
     width: 100%;
-    margin-top: 5%;
+    margin-top: 0%;
     margin-left: 0%;
     font-weight: bold;
     font-family: 'Oxygen', sans-serif;
@@ -247,9 +251,6 @@ svg{
 .style{
     background-color:black ;
 }
-.image{
-
-}
 
 iframe{
     margin: 0;
@@ -259,14 +260,37 @@ iframe{
 
 .fullstack{
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 .frontend{
-    background-color: purple;
+    background-color: darkgoldenrod;
     color: white;
     float: left;
 
 }
+
+.tool-tip{
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 300;
+
+}
+.frontend .tool-tip{
+    visibility: hidden;
+}
+.frontend:hover .tool-tip{
+    visibility: visible;
+}
+.backend .tool-tip{
+    visibility: hidden;
+}
+.backend:hover .tool-tip{
+    visibility: visible;
+}
+
+
 .backend{
     background-color: navy;
     color: white;
@@ -274,15 +298,88 @@ iframe{
 }
 .interestText{
     font-size: larger;
+    margin-top: -20px;
 }
 
 .spotify{
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .largeText{
-    color: #6a6a6a;
+    color: black;
     font-size: 20px;
+    font-family: 'Sunflower', sans-serif;
+
 }
+.fadein4 {
+    webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4s; /* Firefox < 16 */
+    -ms-animation: fadein 4s; /* Internet Explorer */
+    -o-animation: fadein 4s; /* Opera < 12.1 */
+    animation: fadein 4s;
+}
+
+.fadein6 {
+    webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 6s; /* Firefox < 16 */
+    -ms-animation: fadein 6s; /* Internet Explorer */
+    -o-animation: fadein 6s; /* Opera < 12.1 */
+    animation: fadein 6s;
+}
+
+.fadein8 {
+    webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 8s; /* Firefox < 16 */
+    -ms-animation: fadein 8s; /* Internet Explorer */
+    -o-animation: fadein 8s; /* Opera < 12.1 */
+    animation: fadein 8s;
+}
+.fadein9 {
+    webkit-animation: fadein 9s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 9s; /* Firefox < 16 */
+    -ms-animation: fadein 9s; /* Internet Explorer */
+    -o-animation: fadein 9s; /* Opera < 12.1 */
+    animation: fadein 9s;
+}
+
+.fadein10 {
+    webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 10s; /* Firefox < 16 */
+    -ms-animation: fadein 10s; /* Internet Explorer */
+    -o-animation: fadein 10s; /* Opera < 12.1 */
+    animation: fadein 10s;
+}
+
+.fadein12 {
+    webkit-animation: fadein 12s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 12s; /* Firefox < 16 */
+    -ms-animation: fadein 12s; /* Internet Explorer */
+    -o-animation: fadein 12s; /* Opera < 12.1 */
+    animation: fadein 12s;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 .mediumText{
     font-size: 16px;
 
@@ -291,17 +388,85 @@ iframe{
     font-weight: bold;
 }
 .ASU{
-    color: maroon;
+    color: lightslategray;
 }
 
 .Nirma{
-    color: maroon;
+    color: lightslategray;
 }
 
 @media screen and (max-width: 600px){
-div.spotify{
-    display: block;
-    margin-left: 15%;
-    margin-top: 20px;
+    div.spotify{
+        display: block;
+        margin-left: 17%;
+        margin-top: 25px;
+    }
+    .padding-left-50px{
+        padding-left:45px;
+    }
 }
+.degree{
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+}
+.passionate{
+    font-size: 26px;
+    color: #2AC5EA;
+}
+
+/* responsive and shit
+*/
+@media screen and (min-width: 1000px) {
+
+    .fixed-gap{
+        margin-top: 95%;
+    }
+
+    .image-gap{
+        margin-top: 20%;
+    }
+
+    .vertical-line{
+        margin-left: 1px;
+        border-right: 3px solid slategray;
+        height: 40%;
+
+
+    }
+    .circle {
+        background: slategray;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    .ASU{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .ASU{
+        margin-top: 50px;
+    }
+
+    .intro-content{
+        margin-right: 50px;
+    }
+}
+
+.smallText{
+    font-weight: 500;
+    font-size: 17px;
+    font-family: 'Muli', sans-serif;
+}
+
+.surname{
+    color: olivedrab;
+}
+
+.project-link{
+    color: cornflowerblue;
 }
