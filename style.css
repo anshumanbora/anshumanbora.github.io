@@ -4,7 +4,7 @@ body {
     padding:0;
     height:100%;
     overflow-x: hidden;
-    
+
 }
 
 
@@ -263,10 +263,16 @@ iframe{
     margin-bottom: 70px;
 }
 .frontend{
-    background-color: darkgoldenrod;
-    color: white;
+    background-color: white;
+    color: black;
+    border-style: solid;
     float: left;
-
+}
+.frontend:hover{
+    background-color: midnightblue;
+    color: white;
+    border-style: solid;
+    border-color: cornflowerblue;
 }
 
 .tool-tip{
@@ -292,9 +298,15 @@ iframe{
 
 
 .backend{
-    background-color: navy;
-    color: white;
+    border-color: maroon;
+    border-style: solid solid solid none;
+    color: black;
     float: left;
+}
+.backend:hover{
+    background-color: maroon;
+    color: white;
+    border-color: tomato;
 }
 .interestText{
     font-size: larger;

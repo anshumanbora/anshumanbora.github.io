@@ -104,8 +104,8 @@ class Projects extends Component {
                 <div>
                     <Fade bottom>
                         <div className="row">
-                            <div className="col-xs-3 "></div>
-                            <div className="col-xs-6 center-block" align="center">
+                            <div className="col-lg-3 col-md-3 col-xs-1"></div>
+                            <div className="col-lg-6 col-md-6 col-xs-10 center-block" align="center">
                                 <div className="card  projects">
                                     <div className="card-block">
                                         <h4 className="card-title"><strong>{details.heading}</strong></h4>
@@ -116,7 +116,7 @@ class Projects extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xs-3"></div>
+                            <div className="col-lg-3 col-md-3 col-xs-1"></div>
                         </div>
                     </Fade>
                 </div>
@@ -151,8 +151,8 @@ class Experience extends Component {
                 <div>
                     <Fade bottom>
                         <div className="row">
-                            <div className="col-xs-3"></div>
-                            <div className="col-xs-6 center-block" align="center">
+                            <div className="col-lg-3 col-md-3 col-xs-1"></div>
+                            <div className="col-lg-6 col-md-6 col-xs-10 center-block" align="center">
                                 <div className="card experience">
                                     <div className="card-block">
                                         <h4 className="card-title"><strong>{details.heading}</strong></h4>
@@ -162,7 +162,7 @@ class Experience extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xs-3"></div>
+                            <div className="col-lg-3 col-md-3 col-xs-1"></div>
                         </div>
                     </Fade>
                 </div>
