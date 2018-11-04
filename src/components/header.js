@@ -10,7 +10,7 @@ class Header extends Component{
         return(
             <div id="header" className="page-header header text-center">
                 <div className="row"></div>
-                <div className="col-md-4 text-left">Anshuman<span className="surname">Bora</span>
+                <div className="col-md-4 text-left">ANSHUMAN<span className="surname">BORA</span>
                     <h4 id="sub_header">
                         Full Stack Developer
                     </h4>

@@ -26,7 +26,7 @@ p.bigfirst::first-letter{
     bottom:0;
     width:100%;
     height:100px;   /* Height of the footer */
-    background:darkslategray;
+    background: black;
     color:white;
     overflow-x: hidden;
 }
@@ -61,7 +61,8 @@ a:active{
     position: fixed;
     width: 100%;
     z-index: 3;
-    background-color: white;
+    background-color: black;
+    color:white;
 
 
 }
@@ -78,6 +79,8 @@ a:active{
 {
     font-family: 'Muli', sans-serif;
     font-size: 17px;
+    color: #ddd;
+
 }
 
 .experience{
@@ -476,9 +479,13 @@ iframe{
 }
 
 .surname{
-    color: olivedrab;
+    color: #2AC5EA;
 }
 
 .project-link{
     color: cornflowerblue;
+}
+
+.fa {
+    color: #2AC5EA;
 }

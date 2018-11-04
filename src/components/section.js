@@ -10,8 +10,13 @@ var data = {
     content: {
         experience: [
             {
+                heading: "Software Engineer",
+                time:"Corteva Agriscience, October 2018 - Current",
+                about : "Developing geospatial mapping tools for the agriculture industry.\n"
+            },
+            {
                 heading: "Volunteer Web Developer",
-                time:"Sunshine Acres, October 2017 - Current",
+                time:"Sunshine Acres, October 2017 - June 2018",
                 about : "Developed a web based React application to keep track of medications administered to more than 2000 foster children.\n"
             },
             {
