@@ -9,18 +9,18 @@ class Skills extends Component{
             {
                 key:1,
                 heading: "Web Develpoment",
-                about : "HTML5,  CSS3,  Node,  React, Flask, MVC, Flux"
+                about : "HTML5,  CSS3,  Node,  React, Flask, Django, MVC, Flask"
 
             },
             {
                 key:2,
-                heading: "Frameworks & Technologies",
-                about : "Hadoop,  Apache,  Spark,  Unity,  Hyperledger Fabric"
+                heading: "Paradigms",
+                about : "Geospatial Engineering, Test Driven Development, Blockchain, Distributed Systems"
             },
             {
                 key:3,
                 heading: "Languages",
-                about : "Python,  JavaScript,  Java,  C++, MATLAB"
+                about : "Python,  JavaScript,  Java, C/C++, MATLAB"
             },
             {
                 key:4,

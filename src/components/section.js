@@ -12,7 +12,7 @@ var data = {
             {
                 heading: "Software Engineer",
                 time:"Corteva Agriscience, October 2018 - Current",
-                about : "Developing geospatial mapping tools for the agriculture industry.\n"
+                about : "Developing Geospatial Engineering tools for the agri-science industry.\n"
             },
             {
                 heading: "Volunteer Web Developer",
