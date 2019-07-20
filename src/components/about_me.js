@@ -58,9 +58,9 @@ class AboutMe extends Component{
                                     </div>
                                 </Fade>
                                 <Fade bottom cascade> <span className="passionate">PASSIONATE ABOUT</span>
-                                    <div bottom className="smallText">BLOCKCHAIN</div>
-                                    <div bottom className="smallText">HUMAN COMPUTER INTERACTION</div>
-                                    <div bottom className="smallText">ADAPTIVE WEB APPLICATION</div>
+                                    <div bottom className="smallText">GEOSPATIAL ENGINEERING</div>
+                                    <div bottom className="smallText">HUMAN COMPUTER INTERACTIONS</div>
+                                    <div bottom className="smallText">ADAPTIVE WEB APPLICATIONS</div>
                                 </Fade>
 
                                 <div className="vSpace30"></div>

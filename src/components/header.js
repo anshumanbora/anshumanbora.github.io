@@ -12,7 +12,7 @@ class Header extends Component{
                 <div className="row"></div>
                 <div className="col-md-4 text-left">ANSHUMAN<span className="surname">BORA</span>
                     <h4 id="sub_header">
-                        Full Stack Developer
+                        Software Engineer
                     </h4>
                 </div>
                 <div className="col-md-4"> </div>
