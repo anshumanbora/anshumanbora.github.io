@@ -1,3 +1,3 @@
 Anshuman Bora's Portfolio created with ReactJS.
 This is the source code for the site.
-To visit the site go to: "anshumanbora.github.io"
+To visit the site go to: [anshumanbora.github.io](https://anshumanbora.github.io.com)
