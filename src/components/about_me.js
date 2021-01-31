@@ -39,7 +39,7 @@ class AboutMe extends Component {
                     Hello there. I'm a Software Engineer at <a className="corteva" href="https://www.corteva.com/" title="What is Corteva Agriscience?" target="_blank">Corteva Agriscience</a>.
                   </div>
                   <div className="during">
-                     During weekdays you can find me staring at Django migrations or scratching my head over production bugs.  
+                     During weekdays you can find me staring at long lines of codes trying to find answers to some unanswered questions.  
                     <br/>
                     On weekends I'm usually out in the nature hitting some trails with my camera.
 

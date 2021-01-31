@@ -132,10 +132,10 @@ a:active {
 
 #blockSkillsHeader {
   margin: 20px;
-  background-color: white;
-  color: black;
+  /* background-color: white; */
+  color: white;
   font-size: medium;
-  animation: SkillsHeader;
+  /* animation: SkillsHeader; */
   animation-duration: 4s;
   padding: 10px;
   border-radius: 4px;
