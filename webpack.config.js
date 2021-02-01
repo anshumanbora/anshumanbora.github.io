@@ -1,4 +1,5 @@
 const webpack = require("webpack");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   entry: `${__dirname}/src/index.js`,
@@ -21,14 +22,18 @@ module.exports = {
     ],
   },
 
-  plugins:
-    process.argv.indexOf("-p") === -1
-      ? []
-      : [
-          new webpack.optimize.UglifyJsPlugin({
-            output: {
-              comments: false,
-            },
-          }),
-        ],
+  // plugins:
+  //   process.argv.indexOf("-p") === -1
+  //     ? []
+  //     : [
+  //         new webpack.optimize.UglifyJsPlugin({
+  //           output: {
+  //             comments: false,
+  //           },
+  //         }),
+  //       ],
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  },
 };
