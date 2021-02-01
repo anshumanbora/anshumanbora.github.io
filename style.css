@@ -1,3 +1,5 @@
+/* TODO: Use flex box instead of super hard coded css classes
+ */
 html,
 body {
   margin: 0;
@@ -505,7 +507,6 @@ iframe {
 .about-me{
   font-size: 47px;
 }
-
 .during{
   margin-top: 15px;  
   color: white;

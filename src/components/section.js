@@ -1,6 +1,7 @@
 /**
  * Created by anshuamanbora on 7/9/2017.
  */
+// TODO: General cleanup required
 import React, { Component } from "react";
 import Skills from "./Skills";
 import Spotify from "./Spotify";
@@ -187,7 +188,7 @@ class Section extends Component {
     this.setState({ experienceVisible: !this.state.experienceVisible });
   }
 
-  onClickProject() {console.log(this.state.projectVisible)
+  onClickProject() {
     this.setState({ projectVisible: !this.state.projectVisible });
   }
   onClickSkills() {
