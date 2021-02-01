@@ -511,3 +511,9 @@ iframe {
   /* font-style: italic; */
   padding:20 0 20 20;
 }
+.collapseSection{
+  text-align: center;
+  padding:10px;
+  font-size: 18px;
+  color: tomato;
+}

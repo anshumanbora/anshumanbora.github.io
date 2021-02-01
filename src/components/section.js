@@ -187,7 +187,7 @@ class Section extends Component {
     this.setState({ experienceVisible: !this.state.experienceVisible });
   }
 
-  onClickProject() {
+  onClickProject() {console.log(this.state.projectVisible)
     this.setState({ projectVisible: !this.state.projectVisible });
   }
   onClickSkills() {
@@ -264,6 +264,8 @@ class Section extends Component {
             EXPERIENCE
           </div>
           {this.state.experienceVisible ? <Experience /> : null}
+          {/* {this.state.experienceVisible?<div className="collapseSection" onClick={() => this.onClickExp()}><i className="fa fa-chevron-up"></i></div>:null} */}
+          
         </div>
 
         <div className="section card-background">
@@ -277,6 +279,8 @@ class Section extends Component {
             SKILLS
           </div>
           {this.state.skillsVisible ? <Skills /> : null}
+          {/* {this.state.skillsVisible?<div className="collapseSection" onClick={() => this.onClickSkills()}><i className="fa fa-chevron-up"></i></div>:null} */}
+          
         </div>
       
         <div className="card-background">
@@ -290,6 +294,7 @@ class Section extends Component {
             PROJECTS
           </div>
           {this.state.projectVisible ? <Projects /> : null}
+          {/* {this.state.projectVisible?<div className="collapseSection" onClick={() => this.onClickProject()}><i className="fa fa-chevron-up"></i></div>:null} */}
         </div>
 
         <div className="card-background ">
@@ -304,6 +309,7 @@ class Section extends Component {
             INTERESTS
           </div>
           {this.state.interestVisible ? <Spotify /> : null}
+          {/* {this.state.interestVisible?<div className="collapseSection" onClick={() => this.onClickInterest()}><i className="fa fa-chevron-up"></i></div>:null} */}
         </div>
 
         {/* <div className="vSpace50"></div> */}
