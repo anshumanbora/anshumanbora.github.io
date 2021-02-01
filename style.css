@@ -394,13 +394,13 @@ iframe {
   font-weight: bold;
 }
 .ASU {
-  color: white;
-  text-align: center;
+  color: gray;
+  text-align: right;
 }
 
 .Nirma {
-  color: white;
-  text-align: center;
+  color: gray;
+  text-align: right;
 }
 
 @media screen and (max-width: 600px) {
@@ -449,7 +449,7 @@ iframe {
   .ASU {
     margin-top: 40px;
   }
-  
+ 
 }
 
 @media screen and (max-width: 1000px) {
@@ -462,7 +462,9 @@ iframe {
   }
   .during{
     text-align: justify;
+    margin-top:50px;
   }
+  
 
 }
 
@@ -494,18 +496,19 @@ iframe {
 }
 .image{
   margin-top: 145px;
+  margin-bottom: 20px;
 }
 .first-letter::first-letter {
   font-size: 230%;
 }
 
 .about-me{
-  font-size: 57px;
+  font-size: 47px;
 }
 
 .during{
-  margin-top: 20px;  
-  color: gray;
+  margin-top: 15px;  
+  color: white;
   text-align: right;
   font-size: 20px;
   /* font-style: italic; */
