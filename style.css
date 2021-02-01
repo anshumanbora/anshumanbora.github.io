@@ -32,7 +32,9 @@ p.bigfirst::first-letter {
 
 .card {
   padding: 10px;
-  background-color: white;
+  border:1px solid gray;
+  
+  /* background-color: white; */
 }
 
 a {
@@ -79,17 +81,17 @@ a:active {
 }
 
 .experience {
-  background-color: lightcyan;
+  background-color: black;
   margin-bottom: 20px;
 }
 .skills {
-  background-color: white;
+  /* background-color: white; */
   /*margin-left: 32%;
     */
   font-family: "Arial Black";
 }
 .projects {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   margin-bottom: 20px;
 }
 
@@ -107,16 +109,17 @@ a:active {
 
 .card-subtitle {
   font-size: 120%;
-  color: black;
+  color: #FBB03B;
 }
 
-.card-title {
-  color: black;
-}
+/* .card-title {
+  color:white;
+} */
 
 .card-background {
   padding-top: 40px;
   margin: 0px;
+  color: #aaa;
 }
 @keyframes SkillsHeader {
   0% {
@@ -212,7 +215,7 @@ svg {
 
 .section {
   position: relative;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .icon-space {
@@ -505,6 +508,6 @@ iframe {
   color: gray;
   text-align: right;
   font-size: 20px;
-  font-style: italic;
+  /* font-style: italic; */
   padding:20 0 20 20;
 }

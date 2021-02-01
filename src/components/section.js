@@ -246,7 +246,7 @@ class Section extends Component {
     }
 
     if (this.state.hoverInterest) {
-      linkStyleInterest = { color: "purple" };
+      linkStyleInterest = { color: "#af6ef5" };
     } else {
       linkStyleInterest = { color: "gray" };
     }
@@ -285,7 +285,7 @@ class Section extends Component {
             onMouseEnter={this.toggleHoverProject}
             onMouseLeave={this.toggleHoverProject}
             onClick={() => this.onClickProject()}
-            className="heading text-center vspace30"
+            className="heading text-center"
           >
             PROJECTS
           </div>
@@ -298,7 +298,7 @@ class Section extends Component {
             onMouseEnter={this.toggleHoverInterest}
             onMouseLeave={this.toggleHoverInterest}
             onClick={() => this.onClickInterest()}
-            className="heading text-center vSpace30"
+            className="heading text-center "
           >
             {" "}
             INTERESTS
@@ -306,7 +306,7 @@ class Section extends Component {
           {this.state.interestVisible ? <Spotify /> : null}
         </div>
 
-        <div className="vSpace50"></div>
+        {/* <div className="vSpace50"></div> */}
       </div>
     );
   }
